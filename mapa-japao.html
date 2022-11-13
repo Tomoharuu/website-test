@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<title>Cafofo dos Projetos</title>
+ <link rel="icon" type="image/x-icon" href="home-logo.png">
+<style>
+
+.container{
+position: relative;
+}
+
+.center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 18px;
+padding-left:0px;
+}
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  font-size:110%;
+  font-family:Inconsolata;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="traducoes.html">Traduções</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projetos</a>
+    <div class="dropdown-content">
+      <a href="#">Mapa do Japão</a>
+      <a href="#">Python</a>
+      <a href="#">Youtube</a>
+    </div>
+  </li>
+</ul>
+
+
+
+<style>
+
+body{
+margin:0;
+background-color:rgb(60, 60, 60);
+color:white;
+}
+p, h2, table{
+padding-left:50px;
+padding-right:50px;
+font-size:110%;
+font-family:Inconsolata;
+}
+
+h1{
+padding-left:50px;
+padding-right:50px;
+font-family:Inconsolata;
+}
+footer {
+  text-align: center;
+  margin-top:30px;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+
+
+.items{
+    text-align:left;
+    margin:10px auto;
+}
+.items figure{
+    margin:10px 50px;
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+}
+
+figcaption{
+font-size:110%;
+font-family:Inconsolata;
+}
+
+
+</style>
+
+<div class="container">
+	<img src="cover3.jpg" alt="Cover" style="width:2000px;height:300px; opacity:0.7">
+	<div style="color:white; font-family:courier; font-size:50px; text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;" class="center"><b>Cafofo dos Projetos</b></div>
+	</div>
+
+<h1>Objetivo</h1>
+<p>Este projeto tem o intuito de reunir informações sobre as principais regiões do Japão para melhor conhecimento próprio.<br>
+É aprendendo sobre novas regiões, suas práticas e costumes é que se aprende mais sobre o país como um todo.
+
+<h1> Modo de utilização </h1>
+<p> Clique em uma região respectiva do mapa para ser redirecionado para a lista de prefeituras pertencentes a ela.<br>
+Depois disso, é só clicar na prefeitura que quiser descobrir mais informações.</p>
+
+<img class="centro" src="mapa-japao-sem-fundo.png" style="width:100%" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="" title="" href="#Hokkaido" coords="1236,103,940,211,1144,404,1196,379,1309,373,1448,277,1414,193" shape="poly">
+    <area target="" alt="" title="" href="#Tohoku" coords="1207,386,1243,470,1277,471,1278,641,1367,653,1374,689,1245,698,1250,548,1203,687,1155,667,1116,678,1112,653,1137,627,1144,597,1127,580,1133,421" shape="poly">
+    <area target="" alt="" title="" href="#Chubu" coords="1126,582,1138,599,1109,652,1110,673,1067,702,1067,716,1099,761,1094,778,1109,800,1095,825,994,824,987,786,965,758,938,773,923,759,986,659,982,389,934,390,931,345,1050,348,1050,379" shape="poly">
+    <area target="" alt="" title="" href="#Kanto" coords="1101,680,1150,666,1185,685,1186,706,1210,715,1215,888,1276,896,1273,933,1172,938,1164,894,1099,773,1103,751,1070,706" shape="poly">
+    <area target="" alt="" title="" href="#Kansai" coords="958,757,985,794,996,836,959,877,976,878,985,1050,1053,1056,1060,1096,929,1098,936,1042,962,1039,896,850,916,817,873,815,875,748,917,758,933,778" shape="poly">
+    <area target="" alt="" title="" href="#Chugoku" coords="716,548,874,553,873,599,780,606,780,771,866,753,867,822,754,875,699,853,763,773,709,597" shape="poly">
+    <area target="" alt="" title="" href="#Shikoku" coords="863,825,752,877,797,943,742,1034,741,1074,884,1071,888,1036,891,855" shape="poly">
+    <area target="" alt="" title="" href="#Kyushu" coords="569,583,696,583,698,630,667,639,673,855,742,875,762,922,706,1048,657,1054,618,896,562,630" shape="poly">
+    <area target="" alt="" title="" href="#Okinawa" coords="472,913,478,1009,338,1141,197,1145,146,952" shape="poly">
+</map>
+
+<h1 style="margin-bottom:0px" id="Hokkaido">Hokkaido</h1>
+<div class="items">
+    <figure>
+        <a href="hokkaido.html" style="color:white"><img src="hokkaido-flag.png" width="100px" height="75px">
+        <figcaption>Hokkaido</figcaption><a/>
+    </figure>
+
+</div>
+
+<h1 style="margin-bottom:0px" id="Tohoku">Tohoku</h1>
+<div class="items">
+    <figure>
+        <a href="aomori.html" style="color:white"><img src="aomori-flag.png" width="100px" height="75px">
+        <figcaption>Aomori</figcaption><a/>
+    </figure>
+    <figure>
+        <a href="akita.html" style="color:white"><img src="akita-flag.png" width="100px" height="75px"> 
+        <figcaption>Akita</figcaption><a/>
+    </figure>
+	    <figure>
+        <a href="iwate.html" style="color:white"><img src="iwate-flag.png" width="100px" height="75px"> 
+        <figcaption>Iwate</figcaption><a/>
+    </figure>
+	    <figure>
+        <a href="fukushima.html" style="color:white"><img src="fukushima-flag.png" width="100px" height="75px"> 
+        <figcaption>Fukushima</figcaption><a/>
+    </figure>
+	    <figure>
+        <a href="miyagi.html" style="color:white"><img src="miyagi-flag.png" width="100px" height="75px"> 
+        <figcaption>Miyagi</figcaption><a/>
+    </figure>
+	    <figure>
+        <a href="yamagata.html" style="color:white"><img src="yamagata-flag.png" width="100px" height="75px"> 
+        <figcaption>Yamagata</figcaption><a/>
+    </figure>
+</div>
+
+<h1>Chubu</h1>
+
+
+
+<footer>
+  <p>Autor: Tomoharu<br>
+  <strong>Copyright  © 2022 Criador dos Sites Brabos - Todos os direitos reservados</p>
+</footer>
+
+
+</body>
+</html>
+
