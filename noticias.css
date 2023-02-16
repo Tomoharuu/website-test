@@ -83,6 +83,11 @@ iframe.centro{
     margin: 0 auto;
 }
 
+embed.centro{
+    display: block;
+    margin: 0 auto;
+}
+
 body{
 margin:0;
 background-color:rgb(60, 60, 60);
