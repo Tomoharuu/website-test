@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="estilo.css">
+<title>Data Science</title>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="traducoes.html">Traduções</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projetos</a>
+    <div class="dropdown-content">
+	  <a href="data-science.html">Data Science</a>
+      <a href="mapa-japao.html">Mapa do Japão</a>
+	  <a href="mamoru-kun.html">Mamoru-kun</a>
+      <a href="python.html">Python</a>
+      <a href="youtube.html">Youtube</a>
+    </div>
+  </li>
+</ul>
+
+
+<div class="container">
+	<img src="cover3.jpg" alt="Cover" style="width:2000px;height:300px; opacity:0.7">
+	<div style="color:white; font-family:courier; font-size:50px; text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;" class="center"><b>Cafofo dos Projetos</b></div>
+	</div>
+
+
+<h1>Projetos para Data Science com Jupyter </h1>
+<h2>Análise de Dados - Lista de Cursos Udemy:</h2>
+
+<p>Este projeto tem o objetivo de analisar alguns dados sobre os cursos fornecedos pela plataforma Udemy.<br>
+A Udemy é uma plataforma de educação à distância (EAD) que oferece mais de 100 mil cursos on-line gratuitos e pagos com certificação. No site, é possível assistir a aulas em diversas áreas como negócios, artes e gastronomia.
+</p>
+
+<figure>
+  <img class="centro" src="https://www.themeum.com/wp-content/uploads/2021/09/themeum-tutor-lms-udemy-frontpage.png" alt="Trulli" style="width:40%">
+  <figcaption style="text-align: center; font-family: Josefin Sans; padding-top:10px">Exemplo de interface do site da Udemy, com alguns dos modelos de curso fornecidos.</figcaption>
+</figure>
+
+
+
+<p>Alguns temas que planejam ser abordados por este projeto são:<br>
+- Quais são os cursos que estão em tendência;<br>
+- Análise área a área para ver o que está sendo mais requisitado;<br>
+- Quão influente é o fato dos cursos serem gratuitos ou pagos;<br>
+- Os cursos mais acessados são necessariamente os mais bem avaliados?<br>
+- A duração e número de aulas influencia na popularidade do curso?<br>
+- Os cursos mais procurados são aqueles com dificuldade mais baixa ou alta?<br>
+- Há predominância dos cursos novos ou antigos?
+</p>
+
+
+<h3>Primeiro passo: Database</h3>
+<p>Seguirá a baixo um trecho da base de dados que será utilizada para a análise de parâmetros.<br>
+Entre os dados coletados da Udemy, estão:<br>
+- Nome do Curso;<br>
+- Preço do Curso (caso haja);<br>
+- Número de Alunos Inscritos;<br>
+- Número de Avaliações (Reviews);<br>
+- Nível do Curso (Iniciante, Intermediário, Avançado);<br>
+- Quantidade de aulas e duração do curso;<br>
+- Nota de avaliação dos usuários.
+<p>
+
+
+
+<embed class="centro" title="Embedded cell output" src="https://embed.deepnote.com/d2a2638d-1258-434f-9acf-3f416d0c4f7c/5b715e9c865b4c658b37642438ae9ba9/24a810ece9da4c56b685037c452b35f9?height=649.4000244140625" height="550" width="90%"/><br>
+
+<h3 style="font-size:110%"> Listagem das áreas atendidas pela Udemy </h3>
+<p>Os dados coletados referente aos cursos da Udemy vão se referir a 4 tipos de cursos. Sâo eles:<br>
+1. Desenvolvimento Web (1203 cursos)<br>
+2. Finanças Empresariais (1191 cursos)<br>
+3. Instrumentos Musicais (680 cursos)<br>
+4. Design Gráfico (602 cursos)
+</p>
+
+<embed class="centro" title="Embedded cell output" src="https://embed.deepnote.com/d2a2638d-1258-434f-9acf-3f416d0c4f7c/5b715e9c865b4c658b37642438ae9ba9/94dc3cd5de4d40769aa214a238497f81?height=230.1875" height="250" width="50%"/><br>
+
+<h3>Trabalhando com a base de dados</h3>
+<p>Dadas as devidas considerações referente aos tipos de dados trabalhados, se inicia aqui a análise propriamente dita referente a essas informações.<br>
+Para tal, será levado em conta, a princípio, cada uma das principais áreas da Udemy para identificar quais são os padrões recorrentes a tais cursos, para depois aprofundar o conceito para uma visão mais generalizada.
+</p>
+
+<h3 style="font-size:110%"> 1. Área de Desenvolvimento Web</h3>
+<p>Para a área de Desenvolvimento Web, que possui a maior quantidade de cursos dentre os dados da database, é interessante apontar quais são os cursos mais procurados pelos alunos e também qual a diferença de busca por eles.<br>
+Segue abaixo gráfico referente aos nomes dos principais cursos, e também quantos alunos os mesmos receberam pela plataforma:
+</p>
+
+<embed class="centro" title="Embedded cell output" src="https://embed.deepnote.com/d2a2638d-1258-434f-9acf-3f416d0c4f7c/5b715e9c865b4c658b37642438ae9ba9/9b9f5aea1eff4702a64f529c108feb53?height=600" height="600" width="90%"/>
+
+<p> Além de analisar simplesmente a quantidade de alunos, pode-se ir além e levar mais alguns parâmetros em consideração.<br>
+Entre eles, está o fato da plataforma apresentar cursos tanto gratuitos, quanto pagos, e também pelo fato dos cursando poderem avaliar o curso de acordo com a nota que consideram correspondente.
+</p>
+
+<p style="padding-bottom:3px"> Segue abaixo gráfico referente a demanda dos cursos, seus preços, e também destacados pelo tamanho das bolhas, as notas recebidas pelos mesmos:
+</p>
+
+<embed class="centro" title="Embedded cell output" src="https://embed.deepnote.com/d2a2638d-1258-434f-9acf-3f416d0c4f7c/5b715e9c865b4c658b37642438ae9ba9/eaa9c2dac46942e994dd01f7abb3f21d?height=600" height="600" width="90%"/>
+
+
+<h1>Projeto ainda em andamento, aguarde até mais atualizações......</h1>
+
+<img class="centro" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWQ5YzcxYmIyNDAwYzIzOGI1NWRkMjk1MGUzY2FhMDc0MmNmMDMwZCZjdD1n/cge9nG7e7wKWbMm9cY/giphy.gif" alt="Work-Progress" style="width:30%">
+
+</body>
+
+<footer>
+  <p>Autor: Luiz Gustavo (Tomoharu)<br>
+  <strong>Copyright  © 2022-2023 Criador dos Sites Brabos - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+
